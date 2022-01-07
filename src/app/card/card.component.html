@@ -1,0 +1,17 @@
+
+
+
+<div class="conteiner">
+
+<div class="Produto" *ngFor="let item of produtos">
+      <div class="imagem"> <img src={{item.img_produto}} alt="" srcset=""> </div>
+      <div class="nome">{{item.nm_produto}} </div>
+
+      <div class="valor">Valor: {{ item.vl_valor + "$" }}</div>
+
+      <div class="botao">
+        <button>Compra</button>
+      </div>
+  </div>
+
+</div>
